@@ -3,15 +3,15 @@ import { MdArrowOutward } from "react-icons/md";
 
 const Blogs = () => {
   return (
-    <section className="flex flex-col md:flex-row relative gap-3 mx-12">
+    <section className="container flex flex-col md:flex-row relative gap-3 mx-12 mb-28">
       <a href="#" className="flex-1">
         <div
           style={{
             background: `url('https://framerusercontent.com/images/TzFal3pKOSQxMaLyBqk9fsOQf8M.png')`,
           }}
-          className="rounded-md h-[26.75rem]"
+          className="rounded-md h-52 md:h-[26.75rem]"
         >
-          <div className="p-5 text-left flex flex-col justify-between h-[26.75rem]">
+          <div className="p-5 text-left flex flex-col justify-between h-52 md:h-[26.75rem]">
             <p className="bg-[#fbfbfb99] max-w-fit py-1 px-2 rounded-full text-[#354b6f] text-xs">
               Market Analysis
             </p>
