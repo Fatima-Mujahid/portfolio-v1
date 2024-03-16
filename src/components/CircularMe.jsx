@@ -2,7 +2,7 @@ import React from "react";
 
 const CircularMe = () => {
   return (
-    <div>
+    <div className="md:mt-[-120px] lg:mt-[-130px] xl:mt-[-140px]">
       <div className="absolute">
         <div className="rounded-text rotating">
           <svg viewBox="0 0 200 200">

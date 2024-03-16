@@ -95,6 +95,45 @@ export default function About() {
           </div>
         </div>
       </div>
+      <div className="container pb-36 md:pb-56">
+        <div className="flex flex-col md:flex-row justify-between gap-12">
+          <h1 className="title">Hackathons</h1>
+          <div className="flex flex-col gap-3 w-full md:w-[55%]">
+            <div className="flex gap-3">
+              <div className="h-56 md:h-72 bg-slate-300 flex-1 rounded-md p-3">
+                here
+              </div>
+              <div className="h-56 md:h-72 bg-slate-300 flex-1 rounded-md p-3">
+                here
+              </div>
+            </div>
+            <div className="flex gap-3 flex-col md:flex-row">
+              <div className="h-56 md:h-72 bg-slate-300 flex-1 rounded-md p-3">
+                here
+              </div>
+              <div className="h-56 md:h-72 bg-slate-300 hidden md:block flex-1 rounded-md p-3">
+                here
+              </div>
+            </div>
+            <div className="flex gap-3 md:hidden">
+              <div className="h-56 md:h-72 bg-slate-300 flex-1 rounded-md p-3">
+                here
+              </div>
+              <div className="h-56 md:h-72 bg-slate-300 flex-1 rounded-md p-3">
+                here
+              </div>
+            </div>
+            <div className="flex gap-3 flex-col md:flex-row">
+              <div className="h-56 md:h-72 bg-slate-300 hidden md:block flex-1 rounded-md p-3">
+                here
+              </div>
+              <div className="h-56 md:h-72 bg-slate-300 flex-1 rounded-md p-3">
+                here
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
