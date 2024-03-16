@@ -1,36 +1,8 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import Image from "next/image";
-import logo1 from "@/assets/logo1.png";
-import logo2 from "@/assets/logo2.png";
-import logo3 from "@/assets/logo3.png";
+import { testimonials } from "@/data/testimonials";
 
-const testimonials = [
-  {
-    id: "feedback-1",
-    image: logo1,
-    name: "Lorem Ipsum",
-    designation: "Lorem @ Ipsum Tech",
-    text: "Lorem Ipsum lorem ipsum lorem ipsum Lorem Ipsum lorem ipsum lorem ipsum Lorem Ipsum lorem ipsum lorem ipsum Lorem Ipsum lorem ipsum lorem ipsum",
-    color: "#eed0f1",
-  },
-  {
-    id: "feedback-2",
-    image: logo2,
-    name: "Lorem Ipsum",
-    designation: "Lorem @ Ipsum Tech",
-    text: "Lorem Ipsum lorem ipsum lorem ipsum Lorem Ipsum lorem ipsum lorem ipsum Lorem Ipsum lorem ipsum lorem ipsum Lorem Ipsum lorem ipsum lorem ipsum",
-    color: "#ebf8ff",
-  },
-  {
-    id: "feedback-3",
-    image: logo3,
-    name: "Lorem Ipsum",
-    designation: "Lorem @ Ipsum Tech",
-    text: "Lorem Ipsum lorem ipsum lorem ipsum Lorem Ipsum lorem ipsum lorem ipsum Lorem Ipsum lorem ipsum lorem ipsum Lorem Ipsum lorem ipsum lorem ipsum",
-    color: "#feeceb",
-  },
-];
 const Testimonials = () => {
   return (
     <section className="flex flex-col md:flex-row container gap-3">
