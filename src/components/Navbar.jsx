@@ -2,16 +2,16 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between text-base text-[#333333] bg-[#ffffff]/60 backdrop-filter items-center py-10 px-12">
-      <a href="/" className="w-48 hover:font-bold transition-all">
+    <nav className="label fixed w-full z-10 flex justify-between text-base text-[#333333] bg-[#ffffff]/80 backdrop-blur-lg items-center py-10 px-6 md:px-8 lg:px-14">
+      <a href="/" className="w-1/3 hover:font-bold transition-all">
         Fatima Mujahid
       </a>
-      <p className="w-48 text-center">Software Engineer</p>
-      <div className="flex items-end gap-12">
-        <a href="#" className="hover:font-bold transition-all w-10">
+      <p className="w-1/3 text-center hidden md:inline">Software Engineer</p>
+      <div className="flex items-end justify-end gap-8 md:gap-12 w-1/3">
+        <a href="#" className="hover:font-bold transition-all">
           Work
         </a>
-        <a href="/about" className="hover:font-bold transition-all w-10">
+        <a href="/about" className="hover:font-bold transition-all">
           About
         </a>
       </div>

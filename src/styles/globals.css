@@ -74,6 +74,10 @@
   @apply text-sm md:text-[16px] lg:text-[18px] xl:text-[20px] text-[#646464];
 }
 
+.label {
+  @apply text-[14px] md:text-[16px] lg:text-[18px] text-[#333333];
+}
+
 /* Embla carousel */
 
 .embla {
@@ -126,7 +130,7 @@
   top: 0;
   transform: traslateY(-50%);
   width: 100px;
-  height: 0.25px;
+  height: 0.5px;
   background: linear-gradient(90deg, #ffffff99, transparent);
 }
 

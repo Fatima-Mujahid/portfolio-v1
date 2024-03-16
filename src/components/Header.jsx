@@ -8,7 +8,7 @@ const Header = () => {
   const x1 = useTransform(scrollYProgress, [0, 1], ["35%", "0.8%"]);
   const x2 = useTransform(scrollYProgress, [0, 1], ["-20%", "3%"]);
   return (
-    <div className="text-[#333333] mt-28">
+    <div className="pt-36 md:pt-56">
       <div className="container">
         <h1 className="header">
           Designing emotional digital experiences that people love
