@@ -59,7 +59,7 @@
 }
 
 .title {
-  @apply text-[30px] lg:text-[38px] xl:text-[48px] font-semibold text-[#333333];
+  @apply text-[30px] lg:text-[38px] xl:text-[48px] font-semibold text-[#333333] mt-[-10px];
 }
 
 .heading {
@@ -67,14 +67,15 @@
 }
 
 .subheading {
-  @apply text-[16px] lg:text-[20px] xl:text-[24px] text-[#333333] leading-[26px] lg:leading-10;
+  @apply text-[16px] lg:text-[20px] xl:text-[24px] text-[#333333] leading-[26px] lg:leading-8 xl:leading-10;
 }
 
 .subheading2 {
   @apply text-sm md:text-[16px] lg:text-[18px] xl:text-[20px] text-[#646464];
 }
 
-/* Projects Carousel */
+/* Projects carousel */
+
 .projects .embla {
   max-width: 48rem;
   margin: auto;
@@ -82,20 +83,24 @@
   --slide-spacing: 1rem;
   --slide-size: 100%;
 }
+
 .projects .embla__viewport {
   overflow: hidden;
 }
+
 .projects .embla__container {
   backface-visibility: hidden;
   display: flex;
   touch-action: pan-y;
   margin-left: calc(var(--slide-spacing) * -1);
 }
+
 .projects .embla__slide {
   flex: 0 0 var(--slide-size);
   min-width: 0;
   padding-left: var(--slide-spacing);
 }
+
 .projects .embla__slide__number {
   box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
   border-radius: 1.8rem;
@@ -106,29 +111,35 @@
   justify-content: center;
   /* height: var(--slide-height); */
 }
+
 .projects .embla-thumbs {
   --thumbs-slide-spacing: 0.8rem;
   --thumbs-slide-height: 6rem;
   margin-top: var(--thumbs-slide-spacing);
 }
+
 .projects .embla-thumbs__viewport {
   overflow: hidden;
 }
+
 .projects .embla-thumbs__container {
   display: flex;
   flex-direction: column;
   margin-left: calc(var(--thumbs-slide-spacing) * -1);
 }
+
 .projects .embla-thumbs__slide {
   flex: 0 0 22%;
   min-width: 0;
   padding-left: var(--thumbs-slide-spacing);
 }
+
 @media (min-width: 576px) {
   .projects .embla-thumbs__slide {
     flex: 0 0 15%;
   }
 }
+
 .projects .embla-thumbs__slide__number {
   border-radius: 1.8rem;
   -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
@@ -152,8 +163,13 @@
   height: var(--thumbs-slide-height);
   width: 100%;
 }
+
 .projects .embla-thumbs__slide--selected .embla-thumbs__slide__number {
   color: var(--text-body);
+}
+
+.label {
+  @apply text-[16px] md:text-[14px] lg:text-[16px] xl:text-[18px] text-[#333333] hover:font-semibold transition-all;
 }
 
 /* Embla carousel */
@@ -208,7 +224,7 @@
   top: 0;
   transform: traslateY(-50%);
   width: 100px;
-  height: 0.25px;
+  height: 0.5px;
   background: linear-gradient(90deg, #ffffff99, transparent);
 }
 

@@ -7,20 +7,22 @@ const Header = () => {
   const { scrollYProgress } = useScroll({ target: targetRef });
   const x1 = useTransform(scrollYProgress, [0, 1], ["35%", "0.8%"]);
   const x2 = useTransform(scrollYProgress, [0, 1], ["-20%", "3%"]);
+
   return (
-    <div className="text-[#333333] mt-28">
+    <div className="pt-36 sm:pt-44 md:pt-56">
       <div className="container">
         <h1 className="header">
-          Designing emotional digital experiences that people love
+          Designing emotional <br className="hidden md:inline" /> digital
+          experiences that <br className="hidden md:inline" /> people love
         </h1>
-        <div className="flex flex-col md:flex-row justify-between gap-12 my-12">
-          <CircularMe />
-          <div className="flex flex-col gap-8 md:gap-14 w-full md:w-[60%]">
-            <p className="subheading">
-              I'm a digital product designer with 8 years of experience, based
-              in Switzerland. I like to understand people to solve their
-              problems and craft digital solutions that resonate.
-            </p>
+        <div className="flex flex-col-reverse md:flex-row justify-between items-end gap-3 md:gap-12 my-8 md:my-14 lg:my-[72px]">
+          <div className="me-[80px] md:me-0 ms-0 md:ms-6 lg:ms-10">
+            <CircularMe />
+          </div>
+          <div className="subheading w-full md:w-[41ch]">
+            I'm a digital product designer with 8 years of experience, based in
+            Switzerland. I like to understand people to solve their problems and
+            craft digital solutions that resonate.
           </div>
         </div>
       </div>
