@@ -8,6 +8,26 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+.rounded-text {
+  width: 10rem;
+  height: 10rem;
+  text-transform: uppercase;
+  transform: rotate(-103deg);
+  color: #fff;
+  z-index: -1;
+}
+@keyframes rotating {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+.rotating {
+  animation: rotating 12s linear infinite;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
