@@ -1,4 +1,3 @@
-import { Alexandria } from "next/font/google";
 import { interests, experience } from "@/data/about";
 import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
@@ -7,15 +6,13 @@ import about1 from "@/assets/about1.png";
 import about2 from "@/assets/about2.png";
 import about3 from "@/assets/about3.png";
 
-const alexandria = Alexandria({ subsets: ["latin"] });
-
 export default function About() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
     AutoScroll({ playOnInit: true, speed: 1.25 }),
   ]);
 
   return (
-    <section className={alexandria.className}>
+    <section>
       <div className="container pt-36 md:pt-56">
         <h1 className="header mb-10">
           Hello,<span className="hidden md:inline">&nbsp;</span>

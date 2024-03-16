@@ -1,5 +1,6 @@
 import React from "react";
 import { MdArrowOutward } from "react-icons/md";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -39,18 +40,42 @@ const Footer = () => {
         <div className="py-10 flex justify-between">
           <p>&copy; Built by Fatima with &#9829;</p>
           <div className="flex gap-8">
-            <a href="#" className="flex items-center">
+            <Link
+              href="https://linkedin.com/in/fatimamujahid"
+              className="flex items-center"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               LinkedIn&nbsp;
               <MdArrowOutward />
-            </a>
-            <a href="#" className="flex items-center">
+            </Link>
+            <Link
+              href="https://instagram.com/_dev_logs"
+              className="flex items-center"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Instagram&nbsp;
               <MdArrowOutward />
-            </a>
-            <a href="#" className="flex items-center">
+            </Link>
+            <Link
+              href="https://github.com/Fatima-Mujahid"
+              className="flex items-center"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github&nbsp;
+              <MdArrowOutward />
+            </Link>
+            <Link
+              href="https://upwork.com/freelancers"
+              className="flex items-center"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Upwork&nbsp;
               <MdArrowOutward />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

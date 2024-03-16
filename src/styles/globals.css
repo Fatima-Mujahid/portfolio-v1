@@ -54,6 +54,10 @@
   @apply text-[38px] md:text-[54px] lg:text-[72px] xl:text-[88px] font-semibold text-[#333333] leading-tight;
 }
 
+.header2 {
+  @apply text-[28px] md:text-[40px] lg:text-[56px] xl:text-[70px] font-semibold text-[#333333] leading-tight;
+}
+
 .title {
   @apply text-[30px] lg:text-[38px] xl:text-[48px] font-semibold text-[#333333];
 }
@@ -109,10 +113,10 @@
   left: 10%;
   width: 2px;
   height: 2px;
-  background: #fff;
+  background: #ffffff99;
   border-radius: 50%;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1),
-    0 0 0 3px rgba(255, 255, 255, 0.1), 0 0 5px rgba(255, 255, 255, 1);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05),
+    0 0 0 2px rgba(255, 255, 255, 0.075), 0 0 4px rgba(255, 255, 255, 0.025);
   animation: shootingstars 7s linear infinite;
 }
 
@@ -122,8 +126,8 @@
   top: 0;
   transform: traslateY(-50%);
   width: 100px;
-  height: 1px;
-  background: linear-gradient(90deg, #fff, transparent);
+  height: 0.25px;
+  background: linear-gradient(90deg, #ffffff99, transparent);
 }
 
 @keyframes shootingstars {
@@ -131,7 +135,7 @@
     transform: rotate(205deg) translateX(0);
     opacity: 1;
   }
-  75% {
+  65% {
     opacity: 1;
   }
   100% {
@@ -141,8 +145,8 @@
 }
 
 .star:nth-child(1) {
-  top: 0;
-  right: 0;
+  top: -100px;
+  right: 10px;
   left: initial;
   animation-delay: 0;
   animation-duration: 6s;
@@ -150,56 +154,56 @@
 
 .star:nth-child(2) {
   top: 0;
-  right: 80;
-  left: initial;
+  right: 80px;
+  left: 10px;
   animation-delay: -0.2s;
   animation-duration: 4s;
 }
 
 .star:nth-child(3) {
   top: 80px;
-  right: 120;
-  left: 110;
+  right: 120px;
+  left: 110px;
   animation-delay: 0.4s;
   animation-duration: 5s;
 }
 
 .star:nth-child(4) {
-  top: 0;
-  right: 150px;
-  left: 90;
+  top: 210px;
+  right: -60px;
+  left: 80px;
   animation-delay: 0.6s;
   animation-duration: 4.5s;
 }
 
 .star:nth-child(5) {
-  top: 0;
-  right: 180;
-  left: 70;
-  animation-delay: 0;
+  top: -20px;
+  right: 180px;
+  left: 230px;
+  animation-delay: 0.1s;
   animation-duration: 3.5s;
 }
 
 .star:nth-child(6) {
-  top: 20;
-  right: 200;
-  left: 50;
+  top: 50px;
+  right: 200px;
+  left: 150px;
   animation-delay: -0.2s;
   animation-duration: 4.5s;
 }
 
 .star:nth-child(7) {
-  top: 110px;
-  right: 230;
-  left: 30;
+  top: -110px;
+  right: 230px;
+  left: 200px;
   animation-delay: 0.4s;
   animation-duration: 5.5s;
 }
 
 .star:nth-child(8) {
-  top: 50;
+  top: 200px;
   right: 25px;
-  left: 10;
+  left: 90px;
   animation-delay: 0.6s;
   animation-duration: 2.5s;
 }
