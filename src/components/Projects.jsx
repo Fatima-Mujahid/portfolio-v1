@@ -1,31 +1,9 @@
 import React, { useState, useEffect, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
+import { projects } from "@/data/projects";
 
 const OPTIONS = {};
-const SLIDES = ["Tutorania", "Creativerse", "MMI Forms", "Flowy"];
-const projectsContent = {
-  Tutorania: {
-    detail: "detail 1",
-    image:
-      "https://images.unsplash.com/photo-1682686581221-c126206d12f0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  Creativerse: {
-    detail: "detail 2",
-    image:
-      "https://images.unsplash.com/photo-1682686581221-c126206d12f0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  "MMI Forms": {
-    detail: "detail 3",
-    image:
-      "https://images.unsplash.com/photo-1682686581221-c126206d12f0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  Flowy: {
-    detail: "detail 4",
-    image:
-      "https://images.unsplash.com/photo-1682686581221-c126206d12f0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-};
 
 const Projects = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -40,12 +18,12 @@ const Projects = () => {
   const onThumbClick = useCallback(
     (index) => {
       if (!emblaMainApi || !emblaThumbsApi) return;
-      emblaMainApi.scrollTo(SLIDES.indexOf(index));
+      emblaMainApi.scrollTo(Objects.keys(projects).indexOf(index));
     },
     [emblaMainApi, emblaThumbsApi]
   );
   return (
-    <div className="bg-black text-white projects">
+    <div className="bg-black text-white projects mt-20 md:mt-40">
       <div className="container md:hidden">
         <h1>Projects</h1>
         <p>
@@ -53,7 +31,7 @@ const Projects = () => {
           amet dignissimos illo non at eius itaque possimus libero consequatur?
         </p>
         <ProjectsCarousel
-          slides={SLIDES}
+          slides={Object.keys(projects)}
           setSelectedIndex={setSelectedIndex}
           emblaMainRef={emblaMainRef}
           emblaMainApi={emblaMainApi}
@@ -71,11 +49,13 @@ const Projects = () => {
           <div className="embla-thumbs">
             <div className="embla-thumbs__viewport" ref={emblaThumbsRef}>
               <div className="embla-thumbs__container">
-                {SLIDES.map((index) => (
+                {Object.keys(projects).map((index) => (
                   <Thumb
                     key={index}
                     onClick={() => onThumbClick(index)}
-                    selected={SLIDES.indexOf(index) === selectedIndex}
+                    selected={
+                      Object.keys(projects).indexOf(index) === selectedIndex
+                    }
                     index={index}
                   />
                 ))}
@@ -84,7 +64,7 @@ const Projects = () => {
           </div>
         </div>
         <ProjectsCarousel
-          slides={SLIDES}
+          slides={Object.keys(projects)}
           setSelectedIndex={setSelectedIndex}
           emblaMainRef={emblaMainRef}
           emblaMainApi={emblaMainApi}
@@ -124,8 +104,8 @@ const ProjectsCarousel = ({
               <div className="embla__slide__number">
                 <div>
                   <h1>{index}</h1>
-                  <p>{projectsContent[index]["detail"]}</p>
-                  <img src={projectsContent[index]["image"]} />
+                  <p>{projects[index]["detail"]}</p>
+                  <img src={projects[index]["image"]} />
                 </div>
               </div>
             </div>
