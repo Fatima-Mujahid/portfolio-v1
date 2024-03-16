@@ -10,7 +10,7 @@ const Projects = () => {
       <div className="sticky top-0 flex h-screen items-center overflow-hidden flex-nowrap">
         <div className="text-[5.5rem] font-semibold leading-tight whitespace-nowrap">
           <motion.div style={{ x: y }}>
-            <p>Illustration Illustration Illustration</p>
+            <p>Illustration • Illustration • Illustration</p>
           </motion.div>
         </div>
       </div>
