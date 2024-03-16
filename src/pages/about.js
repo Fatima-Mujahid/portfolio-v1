@@ -95,7 +95,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="container pb-36 md:pb-56">
+      <div className="container pt-36 md:pt-56">
         <div className="flex flex-col md:flex-row justify-between gap-12">
           <h1 className="title">Hackathons</h1>
           <div className="flex flex-col gap-3 w-full md:w-[55%]">

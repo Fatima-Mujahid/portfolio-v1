@@ -5,7 +5,7 @@ import { testimonials } from "@/data/testimonials";
 
 const Testimonials = () => {
   return (
-    <section className="flex flex-col md:flex-row container gap-20 md:gap-8 my-44 md:my-52">
+    <section className="flex flex-col md:flex-row container gap-20 md:gap-8 my-36 md:my-56">
       {testimonials.map((testimonial) => (
         <div className="flex flex-col items-center justify-center">
           <Image

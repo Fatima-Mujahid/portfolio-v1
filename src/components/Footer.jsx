@@ -25,12 +25,12 @@ const Footer = () => {
           }}
         >
           <div className="bg-[#333333]/50 flex flex-col items-center justify-center">
-            <h1 className="text-6xl font-semibold leading-tight pt-16">
+            <h1 className="text-6xl font-semibold leading-tight pt-24">
               Let's work together
             </h1>
             <a
               href="mailto:fatimamujahid01@gmail.com"
-              className="bg-white text-black p-7 rounded-full mt-12 mb-28"
+              className="bg-white text-black p-7 rounded-full mt-12 mb-36"
             >
               Send Message
             </a>
