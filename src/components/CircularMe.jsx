@@ -13,13 +13,9 @@ const CircularMe = () => {
               fill="none"
               strokeWidth="0"
             ></path>
-            <g fontSize="18px">
+            <g fontSize="18px" fill="#646464">
               <text textAnchor="start">
-                <textPath
-                  href="#textPath"
-                  startOffset="0%"
-                  className="text-[#0c0c0c]"
-                >
+                <textPath href="#textPath" startOffset="0%">
                   ✦ FATIMA MUJAHID ✦ SOFTWARE ENGINEER
                 </textPath>
               </text>

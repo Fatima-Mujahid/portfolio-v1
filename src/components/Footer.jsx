@@ -68,7 +68,7 @@ const Footer = () => {
               <MdArrowOutward />
             </Link>
             <Link
-              href="https://upwork.com/freelancers"
+              href="https://www.upwork.com/freelancers/~01e4fc3dc3f77f80f7"
               className="flex items-center"
               target="_blank"
               rel="noopener noreferrer"
