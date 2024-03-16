@@ -74,6 +74,14 @@
   @apply text-sm md:text-[16px] lg:text-[18px] xl:text-[20px] text-[#646464];
 }
 
+.label {
+  @apply text-[16px] md:text-[14px] lg:text-[16px] xl:text-[18px] text-[#333333] hover:font-semibold transition-all;
+}
+
+.content {
+  @apply text-[16px] lg:text-[18px] xl:text-[20px] text-[#333333] lg:leading-6 xl:leading-8;
+}
+
 /* Projects carousel */
 
 .projects .embla {
@@ -166,10 +174,6 @@
 
 .projects .embla-thumbs__slide--selected .embla-thumbs__slide__number {
   color: var(--text-body);
-}
-
-.label {
-  @apply text-[16px] md:text-[14px] lg:text-[16px] xl:text-[18px] text-[#333333] hover:font-semibold transition-all;
 }
 
 /* Embla carousel */

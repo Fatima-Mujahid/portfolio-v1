@@ -8,8 +8,8 @@ export default function Home() {
     <section>
       <Header />
       <Projects />
-      <Blogs />
       <Testimonials />
+      <Blogs />
     </section>
   );
 }

@@ -4,7 +4,7 @@ import { blogs } from "@/data/blog";
 
 const Blogs = () => {
   return (
-    <section className="container flex flex-col md:flex-row relative gap-5 mx-12 mb-28">
+    <section className="container flex flex-col md:flex-row relative gap-5 mx-12">
       <a href={blogs[0].url} className="flex-1">
         <div
           style={{
