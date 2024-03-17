@@ -17,7 +17,7 @@ const Blogs = () => {
               {blogs[0]?.category}
             </p>
             <div>
-              <p className="text-xl md:text-4xl md:max-w-xl font-bold text-black pb-3">
+              <p className="title md:max-w-2xl font-bold text-black pb-3">
                 {blogs[0].title}
               </p>
               <p className="text-sm text-white">{blogs[0].date}</p>
@@ -38,9 +38,7 @@ const Blogs = () => {
                 {blogs[1]?.category}
               </p>
               <div>
-                <p className="text-xl font-bold text-black pb-3">
-                  {blogs[1].title}
-                </p>
+                <p className="content font-semibold pb-3">{blogs[1].title}</p>
                 <p className="text-sm text-white">{blogs[1].date}</p>
               </div>
             </div>

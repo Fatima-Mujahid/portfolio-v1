@@ -23,9 +23,9 @@ const Projects = () => {
     [emblaMainApi, emblaThumbsApi]
   );
   return (
-    <div className="bg-black text-white projects mt-20 md:mt-40">
+    <div className="bg-black text-white projects mt-20 md:mt-40 pt-20">
       <div className="container md:hidden">
-        <h1>Projects</h1>
+        <h1 className="title">Projects</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, iusto
           amet dignissimos illo non at eius itaque possimus libero consequatur?
@@ -40,8 +40,8 @@ const Projects = () => {
       </div>
       <div className="hidden container md:flex">
         <div>
-          <h1>Projects</h1>
-          <p>
+          <h1 className="title">Projects</h1>
+          <p className="subheading">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
             iusto amet dignissimos illo non at eius itaque possimus libero
             consequatur?

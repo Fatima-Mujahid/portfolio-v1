@@ -19,7 +19,7 @@ const Testimonials = () => {
               <FaStar className="mr-1" key={`star-${index}`} />
             ))}
           </div>
-          <div className="flex flex-col gap-1 lg:gap-3 items-center mt-3">
+          <div className="flex flex-col gap-1 lg:gap-2 items-center mt-3">
             <p className="subheading2">{testimonial.name}</p>
             <p className="subheading2 scale-90">{testimonial.designation}</p>
           </div>

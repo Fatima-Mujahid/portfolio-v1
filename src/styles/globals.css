@@ -59,7 +59,7 @@
 }
 
 .title {
-  @apply text-[30px] lg:text-[38px] xl:text-[48px] font-semibold text-[#333333] mt-[-10px];
+  @apply text-[30px] lg:text-[38px] xl:text-[48px] font-semibold text-[#333333] mt-[-10px] leading-[38px] lg:leading-[48px] xl:leading-tight;
 }
 
 .heading {
