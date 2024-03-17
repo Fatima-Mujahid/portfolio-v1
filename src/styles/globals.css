@@ -82,6 +82,16 @@
   @apply text-[16px] lg:text-[18px] xl:text-[20px] text-[#333333] lg:leading-6 xl:leading-8;
 }
 
+.tag {
+  @apply bg-[#fbfbfb99] max-w-fit py-1 px-2 rounded-full text-xs text-[#646464];
+}
+
+/* Blog cards */
+
+.blog-sm {
+  @apply md:max-w-80 md:flex-1 rounded-lg shadow-md h-52 md:h-full flex flex-col p-5;
+}
+
 /* Projects carousel */
 
 .projects .embla {
@@ -167,7 +177,6 @@
   color: var(--detail-high-contrast);
   display: flex;
   align-items: center;
-  justify-content: center;
   height: var(--thumbs-slide-height);
   width: 100%;
 }
