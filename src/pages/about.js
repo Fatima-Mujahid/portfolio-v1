@@ -2,6 +2,7 @@ import { interests, experience, hackathons } from "@/data";
 import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
 import Image from "next/image";
+import Link from "next/link";
 import about1 from "@/assets/about1.png";
 import about2 from "@/assets/about2.png";
 import about3 from "@/assets/about3.png";
@@ -18,8 +19,8 @@ export default function About() {
         <h1 className="header mb-10">
           Hi,<span className="hidden md:inline">&nbsp;</span>
           <br className="block md:hidden" />
-          I'm Fatima Mujahid<span className="inline md:hidden">,</span>
-          <br /> a software engineer
+          I'm Fatima<span className="inline md:hidden">,</span>
+          <br /> a developer by heart
         </h1>
         <div className="flex flex-col md:flex-row gap-0 md:gap-8 lg:gap-12 mt-14 md:mt-24 mb-52 md:mb-60 md:items-center lg:items-end md:justify-between">
           <Image
@@ -41,10 +42,10 @@ export default function About() {
           <h1 className="title">About</h1>
           <div className="flex flex-col gap-8 md:gap-14 w-full md:w-[55%]">
             <p className="subheading">
-              I'm a forward-thinking, goal-oriented Software Engineer with 3+
-              years of industry experience. Proficient in Python, JavaScript,
-              Dart, and TypeScript, I have a proven track record of success in
-              both commercial and academic settings.
+              I'm a forward-thinking, goal-oriented software engineer with
+              around 2 years of industry experience. Proficient in Python,
+              JavaScript, TypeScript and Dart, I have a proven track record of
+              success in both industrial and academic settings.
             </p>
             <p className="subheading">
               I'm a versatile developer with experience across a wide range of
@@ -89,7 +90,7 @@ export default function About() {
               >
                 <h4 className="heading mb-[4px]">{item.company}</h4>
                 <p className="subheading mb-5 md:mb-6">{item.title}</p>
-                <p className="subheading2">{item.duration}</p>
+                <p className="subheading2 text-[#646464] ">{item.duration}</p>
               </div>
             ))}
           </div>
@@ -100,40 +101,67 @@ export default function About() {
           <h1 className="title">Hackathons</h1>
           <div className="flex flex-col gap-3 w-full md:w-[55%]">
             <div className="flex gap-3">
-              <div className="aspect-square bg-slate-300 flex-1 rounded-md p-3">
-                <a href="https://peerlist.io/quratuain/project/eduvizion">
-                  {hackathons[0].description}
-                </a>
-              </div>
-              <div className="aspect-square bg-slate-300 flex-1 rounded-md p-3">
-                <a href="https://peerlist.io/quratuain/project/eduvizion">
+              <div className="hackathon bg-[#f5f5f5]">
+                <Link
+                  href="https://peerlist.io/quratuain/project/eduvizion"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Image src={hackathons[0].logo} />
-                </a>
+                </Link>
                 {/* Logo */}
               </div>
-              <div className="aspect-square bg-slate-300 flex-1 rounded-md p-3">
-                <a href="https://peerlist.io/quratuain/project/eduvizion">
-                  <Image src={hackathons[0].image} />
-                </a>
+              <div className="hackathon bg-[#f5f5f5] subheading2">
+                <Link
+                  href="https://peerlist.io/quratuain/project/eduvizion"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {hackathons[0].description}
+                </Link>
+              </div>
+              <div className="hackathon-img">
+                <Link
+                  href="https://peerlist.io/quratuain/project/eduvizion"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full h-full overflow-hidden"
+                >
+                  <Image
+                    src={hackathons[0].image}
+                    className="object-cover overflow-hidden"
+                  />
+                </Link>
               </div>
             </div>
             <div className="flex gap-3">
-              <div className="aspect-square bg-slate-300 flex-1 rounded-md p-3">
-                <a href="https://app.foundance.org/projects/10351">
-                  <Image src={hackathons[1].image} />
-                </a>
-                {/* Image */}
-              </div>
-              <div className="aspect-square bg-slate-300 flex-1 rounded-md p-3">
-                <a href="https://app.foundance.org/projects/10351">
+              <div className="hackathon bg-[#f5f5f5]">
+                <Link
+                  href="https://app.foundance.org/projects/10351"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Image src={hackathons[1].logo} />
-                </a>
-                {/* Logo */}
+                </Link>
               </div>
-              <div className="aspect-square bg-slate-300 flex-1 rounded-md p-3">
-                <a href="https://app.foundance.org/projects/10351">
+              <div className="hackathon bg-[#f5f5f5] subheading2">
+                <Link
+                  href="https://app.foundance.org/projects/10351"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {hackathons[1].description}
-                </a>
+                </Link>
+              </div>
+              <div className="hackathon-img">
+                <Link
+                  href="https://app.foundance.org/projects/10351"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full h-full overflow-hidden"
+                >
+                  <Image src={hackathons[1].image} className="object-cover" />
+                </Link>
               </div>
             </div>
           </div>

@@ -25,15 +25,17 @@ const Footer = () => {
           }}
         >
           <div className="bg-[#333333]/50 flex flex-col items-center justify-center">
-            <h1 className="text-6xl font-semibold leading-tight pt-24">
-              Let's work together
+            <h1 className="text-6xl font-semibold leading-tight pt-24 text-center">
+              Have a vision for amazing software?
+              <br />
+              Let's turn it into a reality.
             </h1>
-            <a
+            <Link
               href="mailto:fatimamujahid01@gmail.com"
-              className="bg-white text-black p-7 rounded-full mt-12 mb-36"
+              className="bg-white text-black px-10 py-6 rounded-full mt-12 mb-36"
             >
-              Send Message
-            </a>
+              Let's chat
+            </Link>
           </div>
         </div>
         <hr />

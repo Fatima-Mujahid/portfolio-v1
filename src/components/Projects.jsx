@@ -24,13 +24,16 @@ const Projects = () => {
     [emblaMainApi, emblaThumbsApi]
   );
   return (
-    <div className="bg-[#f5f5f5] projects mt-16 md:mt-24 py-36 md:py-40">
+    <div
+      id="work"
+      className="bg-[#f5f5f5] projects mt-16 md:mt-24 py-36 md:py-40"
+    >
       <div className="container md:hidden">
         <div className="flex flex-col gap-5">
           <h1 className="title">Projects</h1>
           <p className="subheading mb-12">
-            I help businesses build software that solves problems and delights
-            users.
+            I have helped businesses like yours build software that solves
+            problems and delights users.
           </p>
         </div>
         <ProjectsCarousel
@@ -46,8 +49,8 @@ const Projects = () => {
           <div className="flex flex-col gap-8">
             <h1 className="title">Projects</h1>
             <p className="subheading mb-12">
-              I help businesses build software that solves problems and delights
-              users.
+              I have helped businesses like yours build software that solves
+              problems and delights users.
             </p>
           </div>
           <div className="embla-thumbs">

@@ -75,7 +75,7 @@ body {
 }
 
 .subheading2 {
-  @apply text-sm md:text-[16px] lg:text-[18px] xl:text-[20px] text-[#646464];
+  @apply text-sm md:text-[16px] lg:text-[18px] xl:text-[20px] leading-8;
 }
 
 .label {
@@ -94,6 +94,16 @@ body {
 
 .blog-sm {
   @apply md:max-w-[350px] md:flex-1 rounded-lg shadow-md h-52 md:h-full flex flex-col p-5;
+}
+
+/* Hackathon cards */
+
+.hackathon {
+  @apply aspect-square flex-1 p-8 rounded-md flex items-center justify-center;
+}
+
+.hackathon-img {
+  @apply aspect-square flex-1 rounded-md flex items-center justify-center;
 }
 
 /* Projects carousel */

@@ -1,8 +1,10 @@
 import React from "react";
+import profile from "@/assets/profile.png";
+import Image from "next/image";
 
 const CircularMe = () => {
   return (
-    <div className="md:mt-[-120px] lg:mt-[-130px] xl:mt-[-140px]">
+    <div className="md:mt-[-130px] lg:mt-[-142px] xl:mt-[-155px]">
       <div className="absolute">
         <div className="rounded-text rotating">
           <svg viewBox="0 0 200 200">
@@ -23,10 +25,11 @@ const CircularMe = () => {
           </svg>
         </div>
       </div>
-      <img
-        src="https://framerusercontent.com/images/FRvXGLpRfOwPbYeVxaoIOl5kjqo.jpg"
+      <Image
+        src={profile}
         className="w-16 h-16 rounded-full object-center object-cover relative top-12 left-12"
-      />
+        alt="Fatima"
+      ></Image>
     </div>
   );
 };

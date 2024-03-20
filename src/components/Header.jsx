@@ -21,9 +21,9 @@ const Header = () => {
           </div>
           <div className="subheading w-full md:w-[41ch]">
             I'm a passionate Software Engineer obsessed with crafting solutions
-            that delivers an exceptional results. As a developer, I help
-            businesses translate their vision into reality, and build products
-            that solve real-world problems.
+            that deliver exceptional results. As a developer, I help businesses
+            translate their vision into reality and build products that solve
+            real-world problems.
           </div>
         </div>
       </div>

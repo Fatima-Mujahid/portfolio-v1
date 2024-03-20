@@ -1,15 +1,16 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 import { testimonials } from "@/data";
 
 const Testimonials = () => {
   return (
     <section className="container my-36 md:my-56">
       <h1 className="header2 mb-24 lg:mb-40">In their own words</h1>
-      <div className="flex flex-col md:flex-row gap-20 md:gap-8">
+      <div className="flex flex-col gap-20 md:gap-28 items-start">
         {testimonials.map((testimonial) => (
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center flex-1 max-w-[900px] mx-auto">
             <Image
               src={testimonial.image}
               className="w-16 h-16 p-2 object-contain rounded-full shadow-md"
@@ -21,10 +22,15 @@ const Testimonials = () => {
                 <FaStar className="mr-1" key={`star-${index}`} />
               ))}
             </div>
-            <div className="flex flex-col gap-1 lg:gap-2 items-center mt-3">
-              <p className="subheading2">{testimonial.name}</p>
-              <p className="subheading2 scale-90">{testimonial.designation}</p>
-            </div>
+            <Link
+              href={testimonial.profile}
+              className="flex flex-col gap-1 lg:gap-2 items-center mt-3 text-center"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p className="subheading2 text-[#646464] ">{testimonial.name}</p>
+              <p className="subheading2 text-[#646464] scale-75">{testimonial.designation}</p>
+            </Link>
           </div>
         ))}
       </div>
