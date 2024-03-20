@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply text-[#333333];
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -51,23 +55,23 @@
 /* Typography */
 
 .header {
-  @apply text-[38px] md:text-[54px] lg:text-[72px] xl:text-[88px] font-semibold text-[#333333] leading-tight;
+  @apply text-[38px] md:text-[54px] lg:text-[72px] xl:text-[88px] font-semibold leading-tight;
 }
 
 .header2 {
-  @apply text-[28px] md:text-[40px] lg:text-[56px] xl:text-[70px] font-semibold text-[#333333] leading-tight;
+  @apply text-[28px] md:text-[42px] lg:text-[56px] xl:text-[72px] font-semibold leading-tight;
 }
 
 .title {
-  @apply text-[30px] lg:text-[38px] xl:text-[48px] font-semibold text-[#333333] mt-[-10px] leading-[38px] lg:leading-[48px] xl:leading-tight;
+  @apply text-[30px] lg:text-[38px] xl:text-[48px] font-semibold mt-[-10px] leading-[38px] lg:leading-[48px] xl:leading-tight;
 }
 
 .heading {
-  @apply text-[22px] md:text-[24px] lg:text-[28px] xl:text-[34px] font-semibold text-[#333333];
+  @apply text-[22px] md:text-[24px] lg:text-[28px] xl:text-[34px] font-semibold;
 }
 
 .subheading {
-  @apply text-[16px] lg:text-[20px] xl:text-[24px] text-[#333333] leading-[26px] lg:leading-8 xl:leading-10;
+  @apply text-[16px] lg:text-[20px] xl:text-[24px] leading-[26px] lg:leading-8 xl:leading-10;
 }
 
 .subheading2 {
@@ -75,11 +79,11 @@
 }
 
 .label {
-  @apply text-[16px] md:text-[14px] lg:text-[16px] xl:text-[18px] text-[#333333] hover:font-semibold transition-all;
+  @apply text-[16px] md:text-[14px] lg:text-[16px] xl:text-[18px] hover:font-semibold transition-all;
 }
 
 .content {
-  @apply text-[16px] lg:text-[18px] xl:text-[20px] text-[#333333] lg:leading-6 xl:leading-8;
+  @apply text-[16px] lg:text-[18px] xl:text-[20px] lg:leading-6 xl:leading-8;
 }
 
 .tag {
@@ -89,7 +93,7 @@
 /* Blog cards */
 
 .blog-sm {
-  @apply md:max-w-80 md:flex-1 rounded-lg shadow-md h-52 md:h-full flex flex-col p-5;
+  @apply md:max-w-[350px] md:flex-1 rounded-lg shadow-md h-52 md:h-full flex flex-col p-5;
 }
 
 /* Projects carousel */
@@ -123,7 +127,7 @@
   box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
   border-radius: 1.8rem;
   font-size: 4rem;
-  font-weight: 600;
+  font-weight: 400 !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,8 +135,8 @@
 }
 
 .projects .embla-thumbs {
-  --thumbs-slide-spacing: 0.8rem;
-  --thumbs-slide-height: 6rem;
+  --thumbs-slide-spacing: 0.3rem;
+  --thumbs-slide-height: auto;
   margin-top: var(--thumbs-slide-spacing);
 }
 
@@ -143,7 +147,7 @@
 .projects .embla-thumbs__container {
   display: flex;
   flex-direction: column;
-  margin-left: calc(var(--thumbs-slide-spacing) * -1);
+  /* margin-left: calc(var(--thumbs-slide-spacing) * -1); */
 }
 
 .projects .embla-thumbs__slide {
@@ -172,8 +176,7 @@
   padding: 0;
   margin: 0;
   box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 200;
   color: var(--detail-high-contrast);
   display: flex;
   align-items: center;

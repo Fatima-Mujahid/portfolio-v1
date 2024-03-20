@@ -5,15 +5,15 @@ import { motion, useTransform, useScroll } from "framer-motion";
 const Header = () => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: targetRef });
-  const x1 = useTransform(scrollYProgress, [0, 1], ["35%", "0.8%"]);
-  const x2 = useTransform(scrollYProgress, [0, 1], ["-20%", "3%"]);
+  const x1 = useTransform(scrollYProgress, [0, 1], ["35%", "0%"]);
+  const x2 = useTransform(scrollYProgress, [0, 1], ["-20%", "3.5%"]);
 
   return (
     <div className="pt-36 sm:pt-44 md:pt-56">
       <div className="container">
         <h1 className="header">
-          Designing emotional <br className="hidden md:inline" /> digital
-          experiences that <br className="hidden md:inline" /> people love
+          Turninig ideas into <br className="hidden md:inline" /> powerful software
+          that <br className="hidden md:inline" /> drive results
         </h1>
         <div className="flex flex-col-reverse md:flex-row justify-between items-end gap-3 md:gap-12 my-8 md:my-14 lg:my-[72px]">
           <div className="me-[105px] md:me-0 ms-0 md:ms-6 lg:ms-10">

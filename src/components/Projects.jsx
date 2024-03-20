@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import { projects } from "@/data/projects";
+import { projects } from "@/data";
+import Image from "next/image";
 
 const OPTIONS = {};
 
@@ -18,18 +19,21 @@ const Projects = () => {
   const onThumbClick = useCallback(
     (index) => {
       if (!emblaMainApi || !emblaThumbsApi) return;
-      emblaMainApi.scrollTo(Objects.keys(projects).indexOf(index));
+      emblaMainApi.scrollTo(Object.keys(projects).indexOf(index));
     },
     [emblaMainApi, emblaThumbsApi]
   );
   return (
-    <div className="bg-black text-white projects mt-20 md:mt-40 pt-20">
+    <div className="bg-[#f5f5f5] projects mt-16 md:mt-24 py-36 md:py-40">
       <div className="container md:hidden">
-        <h1 className="title">Projects</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, iusto
-          amet dignissimos illo non at eius itaque possimus libero consequatur?
-        </p>
+        <div className="flex flex-col gap-5">
+          <h1 className="title">Projects</h1>
+          <p className="subheading mb-12">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+            iusto amet dignissimos illo non at eius itaque possimus libero
+            consequatur?
+          </p>
+        </div>
         <ProjectsCarousel
           slides={Object.keys(projects)}
           setSelectedIndex={setSelectedIndex}
@@ -38,14 +42,16 @@ const Projects = () => {
           emblaThumbsApi={emblaThumbsApi}
         />
       </div>
-      <div className="hidden container md:flex">
-        <div>
-          <h1 className="title">Projects</h1>
-          <p className="subheading">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
-            iusto amet dignissimos illo non at eius itaque possimus libero
-            consequatur?
-          </p>
+      <div className="hidden container md:flex gap-8">
+        <div className="flex-1 max-w-7/12">
+          <div className="flex flex-col gap-8">
+            <h1 className="title">Projects</h1>
+            <p className="subheading mb-12">
+              I help businesses like yours identify core user pain points,
+              design intuitive solutions, and confidently build software that
+              solves real problems and delights customers.
+            </p>
+          </div>
           <div className="embla-thumbs">
             <div className="embla-thumbs__viewport" ref={emblaThumbsRef}>
               <div className="embla-thumbs__container">
@@ -96,16 +102,19 @@ const ProjectsCarousel = ({
   }, [emblaMainApi, onSelect]);
 
   return (
-    <div className="embla">
+    <div className="embla flex-1 w-full md:w-5/12">
       <div className="embla__viewport" ref={emblaMainRef}>
         <div className="embla__container">
           {slides.map((index) => (
             <div className="embla__slide" key={index}>
               <div className="embla__slide__number">
-                <div>
-                  <h1>{index}</h1>
-                  <p>{projects[index]["detail"]}</p>
-                  <img src={projects[index]["image"]} />
+                <div className="flex flex-col gap-5 md:gap-8 max-w-[500px] md:max-w-[440px]">
+                  <h1 className="heading">{index}</h1>
+                  <p className="subheading">{projects[index]["detail"]}</p>
+                  <Image
+                    src={projects[index]["image"]}
+                    className="rounded-lg shadow-md"
+                  />
                 </div>
               </div>
             </div>
@@ -126,7 +135,7 @@ const Thumb = ({ selected, index, onClick }) => {
       <button
         onClick={onClick}
         type="button"
-        className={`embla-thumbs__slide__number ${
+        className={`embla-thumbs__slide__number text-[2.5rem] lg:text-[3.25rem] xl:text-[4rem] ${
           selected ? "opacity-100" : "opacity-50"
         }`}
       >

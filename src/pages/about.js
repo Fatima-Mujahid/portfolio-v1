@@ -1,4 +1,4 @@
-import { interests, experience } from "@/data/about";
+import { interests, experience, hackathons } from "@/data";
 import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
 import Image from "next/image";
@@ -13,6 +13,7 @@ export default function About() {
 
   return (
     <section>
+      <title>About Me</title>
       <div className="container pt-36 md:pt-56">
         <h1 className="header mb-10">
           Hello,<span className="hidden md:inline">&nbsp;</span>
@@ -100,35 +101,28 @@ export default function About() {
           <h1 className="title">Hackathons</h1>
           <div className="flex flex-col gap-3 w-full md:w-[55%]">
             <div className="flex gap-3">
-              <div className="h-56 md:h-72 bg-slate-300 flex-1 rounded-md p-3">
-                here
+              <div className="aspect-square bg-slate-300 flex-1 rounded-md p-3">
+                {hackathons[0].description}
               </div>
-              <div className="h-56 md:h-72 bg-slate-300 flex-1 rounded-md p-3">
-                here
+              <div className="aspect-square bg-slate-300 flex-1 rounded-md p-3">
+                <Image src={hackathons[0].logo} />
+                {/* Logo */}
               </div>
-            </div>
-            <div className="flex gap-3 flex-col md:flex-row">
-              <div className="h-56 md:h-72 bg-slate-300 flex-1 rounded-md p-3">
-                here
-              </div>
-              <div className="h-56 md:h-72 bg-slate-300 hidden md:block flex-1 rounded-md p-3">
-                here
+              <div className="aspect-square bg-slate-300 flex-1 rounded-md p-3">
+                <Image src={hackathons[0].image} />
               </div>
             </div>
-            <div className="flex gap-3 md:hidden">
-              <div className="h-56 md:h-72 bg-slate-300 flex-1 rounded-md p-3">
-                here
+            <div className="flex gap-3">
+              <div className="aspect-square bg-slate-300 flex-1 rounded-md p-3">
+                <Image src={hackathons[1].image} />
+                {/* Image */}
               </div>
-              <div className="h-56 md:h-72 bg-slate-300 flex-1 rounded-md p-3">
-                here
+              <div className="aspect-square bg-slate-300 flex-1 rounded-md p-3">
+                <Image src={hackathons[1].logo} />
+                {/* Logo */}
               </div>
-            </div>
-            <div className="flex gap-3 flex-col md:flex-row">
-              <div className="h-56 md:h-72 bg-slate-300 hidden md:block flex-1 rounded-md p-3">
-                here
-              </div>
-              <div className="h-56 md:h-72 bg-slate-300 flex-1 rounded-md p-3">
-                here
+              <div className="aspect-square bg-slate-300 flex-1 rounded-md p-3">
+                {hackathons[1].description}
               </div>
             </div>
           </div>
