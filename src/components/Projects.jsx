@@ -29,9 +29,8 @@ const Projects = () => {
         <div className="flex flex-col gap-5">
           <h1 className="title">Projects</h1>
           <p className="subheading mb-12">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
-            iusto amet dignissimos illo non at eius itaque possimus libero
-            consequatur?
+            I help businesses build software that solves problems and delights
+            users.
           </p>
         </div>
         <ProjectsCarousel
@@ -47,9 +46,8 @@ const Projects = () => {
           <div className="flex flex-col gap-8">
             <h1 className="title">Projects</h1>
             <p className="subheading mb-12">
-              I help businesses like yours identify core user pain points,
-              design intuitive solutions, and confidently build software that
-              solves real problems and delights customers.
+              I help businesses build software that solves problems and delights
+              users.
             </p>
           </div>
           <div className="embla-thumbs">

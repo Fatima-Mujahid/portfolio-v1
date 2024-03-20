@@ -16,10 +16,10 @@ export default function About() {
       <title>About Me</title>
       <div className="container pt-36 md:pt-56">
         <h1 className="header mb-10">
-          Hello,<span className="hidden md:inline">&nbsp;</span>
+          Hi,<span className="hidden md:inline">&nbsp;</span>
           <br className="block md:hidden" />
           I'm Fatima Mujahid<span className="inline md:hidden">,</span>
-          <br /> a developer by heart
+          <br /> a software engineer
         </h1>
         <div className="flex flex-col md:flex-row gap-0 md:gap-8 lg:gap-12 mt-14 md:mt-24 mb-52 md:mb-60 md:items-center lg:items-end md:justify-between">
           <Image
@@ -41,18 +41,17 @@ export default function About() {
           <h1 className="title">About</h1>
           <div className="flex flex-col gap-8 md:gap-14 w-full md:w-[55%]">
             <p className="subheading">
-              I have always been intrigued by how technology has the ability to
-              connect people and enhance our daily experiences. As a digital
-              designer, I recognize my duty to develop designs that are
-              aesthetically pleasing, user-friendly, intuitive, and accessible
-              to all.
+              I'm a forward-thinking, goal-oriented Software Engineer with 3+
+              years of industry experience. Proficient in Python, JavaScript,
+              Dart, and TypeScript, I have a proven track record of success in
+              both commercial and academic settings.
             </p>
             <p className="subheading">
-              In my professional experience, I have been fortunate to work on
-              diverse projects such as web and mobile app design, as well as
-              developing branding and marketing materials for several
-              organizations. I am highly motivated to explore new challenges and
-              strive to expand my knowledge and abilities.
+              I'm a versatile developer with experience across a wide range of
+              technologies. I specialize in both frontend and backend web
+              development, and I'm always eager to learn and adapt. I bring
+              strong problem-solving skills to every project, finding solutions
+              that balance performance, efficiency, and cost-effectiveness.
             </p>
           </div>
         </div>
@@ -102,27 +101,39 @@ export default function About() {
           <div className="flex flex-col gap-3 w-full md:w-[55%]">
             <div className="flex gap-3">
               <div className="aspect-square bg-slate-300 flex-1 rounded-md p-3">
-                {hackathons[0].description}
+                <a href="https://peerlist.io/quratuain/project/eduvizion">
+                  {hackathons[0].description}
+                </a>
               </div>
               <div className="aspect-square bg-slate-300 flex-1 rounded-md p-3">
-                <Image src={hackathons[0].logo} />
+                <a href="https://peerlist.io/quratuain/project/eduvizion">
+                  <Image src={hackathons[0].logo} />
+                </a>
                 {/* Logo */}
               </div>
               <div className="aspect-square bg-slate-300 flex-1 rounded-md p-3">
-                <Image src={hackathons[0].image} />
+                <a href="https://peerlist.io/quratuain/project/eduvizion">
+                  <Image src={hackathons[0].image} />
+                </a>
               </div>
             </div>
             <div className="flex gap-3">
               <div className="aspect-square bg-slate-300 flex-1 rounded-md p-3">
-                <Image src={hackathons[1].image} />
+                <a href="https://app.foundance.org/projects/10351">
+                  <Image src={hackathons[1].image} />
+                </a>
                 {/* Image */}
               </div>
               <div className="aspect-square bg-slate-300 flex-1 rounded-md p-3">
-                <Image src={hackathons[1].logo} />
+                <a href="https://app.foundance.org/projects/10351">
+                  <Image src={hackathons[1].logo} />
+                </a>
                 {/* Logo */}
               </div>
               <div className="aspect-square bg-slate-300 flex-1 rounded-md p-3">
-                {hackathons[1].description}
+                <a href="https://app.foundance.org/projects/10351">
+                  {hackathons[1].description}
+                </a>
               </div>
             </div>
           </div>

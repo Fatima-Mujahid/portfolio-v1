@@ -1,4 +1,4 @@
-import hlogo1 from "@/assets/hlogo1.png";
+import hlogo1 from "@/assets/hlogo1.svg";
 import hackathon1 from "@/assets/hackathon1.png";
 import hlogo2 from "@/assets/hlogo2.png";
 import hackathon2 from "@/assets/hackathon2.png";
