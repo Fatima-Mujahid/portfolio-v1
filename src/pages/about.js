@@ -96,11 +96,11 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="container pt-36 md:pt-56">
+      {/* <div className="container pt-36 md:pt-56">
         <div className="flex flex-col md:flex-row justify-between gap-12">
           <h1 className="title">Hackathons</h1>
-          <div className="flex flex-col gap-3 w-full md:w-[55%]">
-            <div className="flex gap-3">
+          <div className="flex flex-col gap-3 md:max-w-[55%] mx-auto">
+            <div className="flex flex-col md:flex-row gap-3">
               <div className="hackathon bg-[#f5f5f5]">
                 <Link
                   href="https://peerlist.io/quratuain/project/eduvizion"
@@ -109,9 +109,8 @@ export default function About() {
                 >
                   <Image src={hackathons[0].logo} />
                 </Link>
-                {/* Logo */}
               </div>
-              <div className="hackathon bg-[#f5f5f5] subheading2">
+              <div className="hackathon bg-[#f5f5f5]">
                 <Link
                   href="https://peerlist.io/quratuain/project/eduvizion"
                   target="_blank"
@@ -120,21 +119,21 @@ export default function About() {
                   {hackathons[0].description}
                 </Link>
               </div>
-              <div className="hackathon-img">
+              <div className="hackathon-img bg-[#f5f5f5]">
                 <Link
                   href="https://peerlist.io/quratuain/project/eduvizion"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full h-full overflow-hidden"
+                  className="w-full h-full overflow-hidden px-7"
                 >
                   <Image
                     src={hackathons[0].image}
-                    className="object-cover overflow-hidden"
+                    className="object-cover mt-[20%]"
                   />
                 </Link>
               </div>
             </div>
-            <div className="flex gap-3">
+            <div className="flex flex-col md:flex-row gap-3">
               <div className="hackathon bg-[#f5f5f5]">
                 <Link
                   href="https://app.foundance.org/projects/10351"
@@ -144,7 +143,7 @@ export default function About() {
                   <Image src={hackathons[1].logo} />
                 </Link>
               </div>
-              <div className="hackathon bg-[#f5f5f5] subheading2">
+              <div className="hackathon bg-[#f5f5f5]">
                 <Link
                   href="https://app.foundance.org/projects/10351"
                   target="_blank"
@@ -153,20 +152,23 @@ export default function About() {
                   {hackathons[1].description}
                 </Link>
               </div>
-              <div className="hackathon-img">
+              <div className="hackathon-img bg-[#f5f5f5]">
                 <Link
-                  href="https://app.foundance.org/projects/10351"
+                  href="https://peerlist.io/quratuain/project/eduvizion"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full h-full overflow-hidden"
+                  className="w-full h-full overflow-hidden px-7"
                 >
-                  <Image src={hackathons[1].image} className="object-cover" />
+                  <Image
+                    src={hackathons[1].image}
+                    className="object-cover mt-[20%]"
+                  />
                 </Link>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

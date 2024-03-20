@@ -103,7 +103,7 @@ body {
 }
 
 .hackathon-img {
-  @apply aspect-square flex-1 rounded-md flex items-center justify-center;
+  @apply aspect-square flex-1 px-8 rounded-md flex items-center justify-center;
 }
 
 /* Projects carousel */
