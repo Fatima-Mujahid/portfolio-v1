@@ -12,17 +12,18 @@ const Header = () => {
     <div className="pt-36 sm:pt-44 md:pt-56">
       <div className="container">
         <h1 className="header">
-          Turninig ideas into <br className="hidden md:inline" /> powerful software
-          that <br className="hidden md:inline" /> drive results
+          Turning ideas into <br className="hidden md:inline" /> powerful
+          software that <br className="hidden md:inline" /> drive results
         </h1>
         <div className="flex flex-col-reverse md:flex-row justify-between items-end gap-3 md:gap-12 my-8 md:my-14 lg:my-[72px]">
           <div className="me-[105px] md:me-0 ms-0 md:ms-6 lg:ms-10">
             <CircularMe />
           </div>
           <div className="subheading w-full md:w-[41ch]">
-            I'm a digital product designer with 8 years of experience, based in
-            Switzerland. I like to understand people to solve their problems and
-            craft digital solutions that resonate.
+            I'm a passionate Software Engineer obsessed with crafting solutions
+            that delivers an exceptional results. As a developer, I help
+            businesses translate their vision into reality, and build products
+            that solve real-world problems.
           </div>
         </div>
       </div>

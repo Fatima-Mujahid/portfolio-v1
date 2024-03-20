@@ -6,7 +6,7 @@ import Testimonials from "@/components/Testimonials";
 export default function Home() {
   return (
     <section>
-      <title>Fatima</title>
+      <title>Fatima's Portfolio</title>
       <Header />
       <Projects />
       <Testimonials />

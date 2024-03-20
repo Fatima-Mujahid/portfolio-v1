@@ -7,7 +7,7 @@ import Link from "next/link";
 const Blogs = () => {
   return (
     <section className="container pt-8 md:pt-16">
-      <h1 className="header2 mb-24 lg:mb-40">View my blogs</h1>
+      <h1 className="header2 mb-24 lg:mb-40">Explore my articles</h1>
       <div className="flex flex-col md:flex-row gap-5">
         <Link
           href={blogs[0].url}
