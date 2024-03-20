@@ -79,7 +79,7 @@ body {
 }
 
 .label {
-  @apply text-[16px] md:text-[14px] lg:text-[16px] xl:text-[18px] hover:font-semibold transition-all;
+  @apply text-[14px] lg:text-[16px] xl:text-[18px] hover:font-semibold transition-all;
 }
 
 .content {

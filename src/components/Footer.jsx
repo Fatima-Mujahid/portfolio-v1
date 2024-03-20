@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="star" />
       <div className="star" />
       <div className="star" />
-      <div className="mx-12 pt-12">
+      <div className="container pt-12">
         <div
           style={{
             background: `url('stars.svg')`,
@@ -25,21 +25,20 @@ const Footer = () => {
           }}
         >
           <div className="bg-[#333333]/50 flex flex-col items-center justify-center">
-            <h1 className="text-6xl font-semibold leading-tight pt-24 text-center">
-              Have a vision for amazing software?
-              <br />
-              Let's turn it into a reality.
+            <h1 className="header2 scale-100 lg:scale-75 font-semibold leading-tight pt-24 text-center">
+              Have a vision for an amazing software? Let's turn it into a
+              reality.
             </h1>
             <Link
               href="mailto:fatimamujahid01@gmail.com"
-              className="bg-white text-black px-10 py-6 rounded-full mt-12 mb-36"
+              className="bg-white text-black px-8 md:px-12 py-5 md:py-7 rounded-full mt-8 mb-36 text-[16px] lg:text-[18px]"
             >
               Let's chat
             </Link>
           </div>
         </div>
         <hr />
-        <div className="py-10 flex justify-between">
+        <div className="py-10 flex flex-col-reverse md:flex-row justify-between items-center gap-6 label">
           <p>&copy; Built by Fatima with &#9829;</p>
           <div className="flex gap-8">
             <Link

@@ -24,12 +24,16 @@ const Testimonials = () => {
             </div>
             <Link
               href={testimonial.profile}
-              className="flex flex-col gap-1 lg:gap-2 items-center mt-3 text-center"
+              className="flex flex-col items-center mt-3 text-center"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <p className="subheading2 text-[#646464] ">{testimonial.name}</p>
-              <p className="subheading2 text-[#646464] scale-75">{testimonial.designation}</p>
+              <p className="subheading2 text-[#646464] mb-[-10px] md:mb-0">
+                {testimonial.name}
+              </p>
+              <p className="subheading2 text-[#646464] scale-90 md:scale-75">
+                {testimonial.designation}
+              </p>
             </Link>
           </div>
         ))}
