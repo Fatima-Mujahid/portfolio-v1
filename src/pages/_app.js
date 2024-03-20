@@ -1,5 +1,5 @@
 import { Alexandria } from "next/font/google";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import "@/styles/globals.css";
 import AnimatedCursor from "react-animated-cursor";
 
