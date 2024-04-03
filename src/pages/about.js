@@ -3,9 +3,9 @@ import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
 import Image from "next/image";
 import Link from "next/link";
-import about1 from "@/assets/about1.png";
-import about2 from "@/assets/about2.png";
-import about3 from "@/assets/about3.png";
+import about1 from "@/assets/about1.jpg";
+import about2 from "@/assets/about2.jpg";
+import about3 from "@/assets/about3.jpg";
 
 export default function About() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [

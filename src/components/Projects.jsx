@@ -11,6 +11,9 @@ const Projects = () => {
   const [emblaMainRef, emblaMainApi] = useEmblaCarousel(OPTIONS, [
     Autoplay({ playOnInit: true, delay: 5000 }),
   ]);
+  const [emblaMainMobileRef, emblaMainMobileApi] = useEmblaCarousel(OPTIONS, [
+    Autoplay({ playOnInit: true, delay: 3000 }),
+  ]);
   const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
     containScroll: "keepSnaps",
     dragFree: true,
@@ -39,8 +42,8 @@ const Projects = () => {
         <ProjectsCarousel
           slides={Object.keys(projects)}
           setSelectedIndex={setSelectedIndex}
-          emblaMainRef={emblaMainRef}
-          emblaMainApi={emblaMainApi}
+          emblaMainRef={emblaMainMobileRef}
+          emblaMainApi={emblaMainMobileApi}
           emblaThumbsApi={emblaThumbsApi}
         />
       </div>
