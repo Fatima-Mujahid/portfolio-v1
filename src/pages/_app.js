@@ -7,6 +7,7 @@ import AnimatedCursor from "react-animated-cursor";
 import { usePathname } from "next/navigation";
 
 const alexandria = Alexandria({ subsets: ["latin"] });
+
 ReactGA.initialize(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_TRACKING_ID);
 
 export default function App({ Component, pageProps }) {
