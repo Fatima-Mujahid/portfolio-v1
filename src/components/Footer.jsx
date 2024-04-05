@@ -35,7 +35,7 @@ const Footer = () => {
               className="bg-white text-black px-8 md:px-12 py-5 md:py-7 rounded-full mt-8 mb-36 text-[16px] lg:text-[18px]"
               onClick={() => {
                 ReactGA.event({
-                  category: "Let's chat button",
+                  category: "Contact - Let's chat",
                   action: "Click",
                 });
               }}

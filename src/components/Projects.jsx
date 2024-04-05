@@ -4,6 +4,7 @@ import Autoplay from "embla-carousel-autoplay";
 import { projects } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
+import ReactGA from "react-ga4";
 
 const OPTIONS = {};
 
@@ -115,9 +116,15 @@ const ProjectsCarousel = ({
               <div className="embla__slide__number">
                 <Link
                   href={projects[index].link}
-                  rel="noreferrer noopener"
-                  target="_blank"
                   className="flex flex-col gap-5 md:gap-8 max-w-[500px] md:max-w-[440px]"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => {
+                    ReactGA.event({
+                      category: `Projects - ${index}`,
+                      action: "Click",
+                    });
+                  }}
                 >
                   <h1 className="heading">{index}</h1>
                   <p className="subheading">{projects[index].detail}</p>

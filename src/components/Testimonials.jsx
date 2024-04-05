@@ -3,6 +3,7 @@ import { FaStar } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import { testimonials } from "@/data";
+import ReactGA from "react-ga4";
 
 const Testimonials = () => {
   return (
@@ -31,6 +32,12 @@ const Testimonials = () => {
               className="flex flex-col items-center mt-3 text-center"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => {
+                ReactGA.event({
+                  category: `Testimonials - ${testimonial.name}`,
+                  action: "Click",
+                });
+              }}
             >
               <p className="subheading2 text-[#646464] mb-[-10px] md:mb-0">
                 {testimonial.name}
