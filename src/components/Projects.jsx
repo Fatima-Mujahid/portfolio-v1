@@ -3,6 +3,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { projects } from "@/data";
 import Image from "next/image";
+import Link from "next/link";
 
 const OPTIONS = {};
 
@@ -112,14 +113,19 @@ const ProjectsCarousel = ({
           {slides.map((index) => (
             <div className="embla__slide" key={index}>
               <div className="embla__slide__number">
-                <div className="flex flex-col gap-5 md:gap-8 max-w-[500px] md:max-w-[440px]">
+                <Link
+                  href={projects[index]["link"]}
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  className="flex flex-col gap-5 md:gap-8 max-w-[500px] md:max-w-[440px]"
+                >
                   <h1 className="heading">{index}</h1>
                   <p className="subheading">{projects[index]["detail"]}</p>
                   <Image
                     src={projects[index]["image"]}
                     className="rounded-lg shadow-md"
                   />
-                </div>
+                </Link>
               </div>
             </div>
           ))}
