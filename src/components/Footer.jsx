@@ -47,7 +47,7 @@ const Footer = () => {
         <hr />
         <div className="py-10 flex flex-col-reverse md:flex-row justify-between items-center gap-6 label">
           <p>&copy; Built by Fatima with &#9829;</p>
-          <div className="flex gap-8">
+          <div className="flex gap-2 sm:gap-6 md:gap-8">
             <Link
               href="https://linkedin.com/in/fatimamujahid"
               className="flex items-center"
