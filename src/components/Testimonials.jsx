@@ -10,7 +10,10 @@ const Testimonials = () => {
       <h1 className="header2 mb-24 lg:mb-40">In their own words</h1>
       <div className="flex flex-col gap-20 md:gap-28 items-start">
         {testimonials.map((testimonial) => (
-          <div className="flex flex-col items-center justify-center flex-1 max-w-[900px] mx-auto">
+          <div
+            key={`testimonial-${index}`}
+            className="flex flex-col items-center justify-center flex-1 max-w-[900px] mx-auto"
+          >
             <Image
               src={testimonial.image}
               className="w-16 h-16 p-2 object-contain rounded-full shadow-md"

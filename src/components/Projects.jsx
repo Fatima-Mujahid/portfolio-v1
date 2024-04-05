@@ -62,7 +62,7 @@ const Projects = () => {
               <div className="embla-thumbs__container">
                 {Object.keys(projects).map((index) => (
                   <Thumb
-                    key={index}
+                    key={`project-${index}`}
                     onClick={() => onThumbClick(index)}
                     selected={
                       Object.keys(projects).indexOf(index) === selectedIndex
