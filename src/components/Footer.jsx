@@ -1,6 +1,7 @@
 import React from "react";
 import { MdArrowOutward } from "react-icons/md";
 import Link from "next/link";
+import ReactGA from "react-ga4";
 
 const Footer = () => {
   return (
@@ -32,6 +33,12 @@ const Footer = () => {
             <Link
               href="mailto:fatimamujahid01@gmail.com"
               className="bg-white text-black px-8 md:px-12 py-5 md:py-7 rounded-full mt-8 mb-36 text-[16px] lg:text-[18px]"
+              onClick={() => {
+                ReactGA.event({
+                  category: "Let's chat button",
+                  action: "Click",
+                });
+              }}
             >
               Let's chat
             </Link>
