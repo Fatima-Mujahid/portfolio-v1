@@ -79,7 +79,7 @@ export default function About() {
                     key={`interest-${index}`}
                   >
                     <div className="embla__slide__number">
-                      <p className="subheading font-semibold my-12 mx-16">
+                      <p className="subheading font-semibold my-12 mx-12 md:mx-16">
                         {item}
                       </p>
                     </div>
