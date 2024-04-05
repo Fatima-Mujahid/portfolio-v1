@@ -20,6 +20,7 @@ const Blogs = () => {
             <Image
               src={blogs[0].image}
               className="h-6 md:h-24 object-left object-contain"
+              alt={blogs[0].title}
             />
             <p className="text-md md:text-4xl md:max-w-2xl">{blogs[0].title}</p>
             <p className="text-xs md:text-sm text-[#646464]">{blogs[0].date}</p>
@@ -37,6 +38,7 @@ const Blogs = () => {
               <Image
                 src={blogs[1].image}
                 className="h-6 object-left object-contain"
+                alt={blogs[1].title}
               />
               <p className="text-md">{blogs[1].title}</p>
               <p className="text-xs text-[#646464]">{blogs[1].date}</p>

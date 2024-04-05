@@ -26,15 +26,18 @@ export default function About() {
           <Image
             src={about1}
             className="w-[88%] mx-auto lg:mx-0 md:w-[415px] h-[600px] md:h-[550px] object-cover rounded-lg shadow-md shadow-[#333333]"
+            alt="Fatima"
           />
           <div className="hidden md:flex flex-col md:gap-8 max-w-full">
             <Image
               src={about3}
               className="lg:ms-[-30%] xl:ms-[-60%] w-[420px] h-[285px] lg:h-[300px] object-cover rounded-lg shadow-md shadow-[#333333]"
+              alt="Painting"
             />
             <Image
               src={about2}
               className="lg:mt-[-200px] w-[420px] h-[285px] lg:h-[300px] object-cover rounded-lg shadow-md shadow-[#333333]"
+              alt="Workdesk"
             />
           </div>
         </div>

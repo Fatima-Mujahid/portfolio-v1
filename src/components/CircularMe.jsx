@@ -28,7 +28,7 @@ const CircularMe = () => {
       <Image
         src={profile}
         className="w-16 h-16 rounded-full object-center object-cover relative top-12 left-12"
-        alt="Fatima"
+        alt="Fatima Mujahid"
       ></Image>
     </div>
   );
