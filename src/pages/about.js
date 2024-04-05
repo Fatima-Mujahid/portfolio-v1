@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { interests, experience, hackathons } from "@/data";
 import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
@@ -14,7 +15,14 @@ export default function About() {
 
   return (
     <section>
-      <title>About Me</title>
+      <Head>
+        <title>About Me</title>
+        <meta
+          name="description"
+          content="A passionate software engineer obsessed with crafting solutions that deliver exceptional results."
+          key="desc"
+        />
+      </Head>
       <div className="container pt-36 md:pt-56">
         <h1 className="header mb-10">
           Hi,<span className="hidden md:inline">&nbsp;</span>
